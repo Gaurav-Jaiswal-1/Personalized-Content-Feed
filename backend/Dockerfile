@@ -2,8 +2,11 @@ FROM python:3.8-slim
 
 WORKDIR /app
 
+# Copy the backend code
 COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "app/main.py"]
+EXPOSE 5000
+
+CMD ["python", "-m", "app.main"]
