@@ -1,0 +1,23 @@
+body {
+  width: 250px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+input, button {
+  margin: 5px;
+  padding: 8px;
+  width: 90%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ddd;
+  padding: 5px;
+  margin: 5px 0;
+}
