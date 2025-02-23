@@ -1,8 +1,8 @@
 {
-  "name": "Personalized Content Feed",
-  "version": "1.0",
+  "name": "Personalized YouTube Feed",
+  "version": "1.1",
   "manifest_version": 3,
-  "description": "A Chrome extension that personalizes the user's content feed.",
+  "description": "Prioritizes YouTube content based on user-defined keywords.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -24,7 +24,9 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["src/content.js"]
+      "js": ["src/content.js"],
+      "run_at": "document_idle",
+      "world": "MAIN"
     }
   ]
 }
